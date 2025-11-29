@@ -239,3 +239,4 @@ For issues and questions, please refer to the SETUP_GUIDE.md or create an issue 
 ---
 
 **Built with ❤️ to fight misinformation and protect digital truth**
+
