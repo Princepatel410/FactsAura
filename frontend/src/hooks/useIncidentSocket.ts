@@ -1,7 +1,5 @@
-import { useEffect, useState } from 'react';
-import { useQuery, useQueryClient } from '@tanstack/react-query';
+import { useQuery } from '@tanstack/react-query';
 import { fetchPostsByIncident, fetchDemoState } from '../lib/api';
-import type { Post } from '../types';
 
 export function useIncidentSocket(incidentId: string | null) {
     // Get demo state to check if paused

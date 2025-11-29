@@ -1,0 +1,29 @@
+========================================
+🚀 DEPLOY TO VERCEL - COPY AND RUN THIS
+========================================
+
+cd FactZAura/frontend && npx vercel --prod
+
+========================================
+
+WHAT WILL HAPPEN:
+1. Vercel will ask you to login (if not logged in)
+2. You'll be asked to set up the project
+3. Accept all defaults by pressing Enter
+4. Wait 2-3 minutes for deployment
+5. You'll get a live URL!
+
+IMPORTANT ANSWERS:
+- Set up and deploy? → Y
+- Link to existing project? → N
+- Project name? → factzaura (or press Enter)
+- Override settings? → N
+
+========================================
+
+After deployment, your app will be live at:
+https://factzaura.vercel.app (or similar)
+
+The vercel.json file will fix the 404 errors automatically!
+
+========================================
