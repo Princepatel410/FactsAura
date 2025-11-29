@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-slate-900 text-slate-50;
+  }
+}
+
+@layer utilities {
+  .glass-panel {
+    @apply bg-glass backdrop-blur-md border border-glass-border rounded-xl;
+  }
+  
+  .glass-panel-hover {
+    @apply transition-all duration-300;
+  }
+  
+  .glass-panel-hover:hover {
+    @apply shadow-lg shadow-emerald-500/10 scale-[1.02];
+  }
+}
+
+/* Custom slider styling */
+input[type="range"].slider::-webkit-slider-thumb {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.5);
+}
+
+input[type="range"].slider::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.5);
+}

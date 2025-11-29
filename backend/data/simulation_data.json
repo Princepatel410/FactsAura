@@ -1,0 +1,300 @@
+{
+  "incidents": [
+    {
+      "id": "inc_mumbai_001",
+      "title": "Mumbai Urban Flood 2025",
+      "severity": "CRITICAL",
+      "location": "Mumbai, Maharashtra",
+      "status": "ACTIVE",
+      "stats": {
+        "infected_nodes": 142,
+        "mutation_rate": 0.78
+      }
+    },
+    {
+      "id": "inc_vaccine_002",
+      "title": "COVID Vaccine Side Effects Rumor",
+      "severity": "CRITICAL",
+      "location": "Pan-India",
+      "status": "ACTIVE",
+      "stats": {
+        "infected_nodes": 287,
+        "mutation_rate": 0.92
+      }
+    },
+    {
+      "id": "inc_election_003",
+      "title": "Election Fraud Claims - Karnataka",
+      "severity": "WARNING",
+      "location": "Bangalore, Karnataka",
+      "status": "MONITORING",
+      "stats": {
+        "infected_nodes": 156,
+        "mutation_rate": 0.65
+      }
+    },
+    {
+      "id": "inc_food_004",
+      "title": "Contaminated Food Supply Chain",
+      "severity": "WARNING",
+      "location": "Delhi NCR",
+      "status": "ACTIVE",
+      "stats": {
+        "infected_nodes": 89,
+        "mutation_rate": 0.54
+      }
+    }
+  ],
+  "posts": [
+    {
+      "id": "post_m001",
+      "content": "Heavy rains reported in Dadar area. Waterlogging starting to affect traffic. Please drive carefully. #MumbaiRains",
+      "author": "CitizenReporter",
+      "timestamp": "2025-07-15T09:00:00Z",
+      "incidentId": "inc_mumbai_001",
+      "parentId": null,
+      "mutationScore": 0.0,
+      "mutationType": null
+    },
+    {
+      "id": "post_m002",
+      "content": "RT @CitizenReporter: Heavy rains in Dadar. Waterlogging affecting traffic. Avoid the area if possible. #MumbaiRains",
+      "author": "MumbaiTrafficUpdate",
+      "timestamp": "2025-07-15T09:05:00Z",
+      "incidentId": "inc_mumbai_001",
+      "parentId": "post_m001",
+      "mutationScore": 8.5,
+      "mutationType": "FACTUAL"
+    },
+    {
+      "id": "post_m003",
+      "content": "Dadar is completely underwater! Cars are floating away! It's a disaster zone! #MumbaiFlood",
+      "author": "PanicMonger",
+      "timestamp": "2025-07-15T09:15:00Z",
+      "incidentId": "inc_mumbai_001",
+      "parentId": "post_m001",
+      "mutationScore": 45.2,
+      "mutationType": "EMOTIONAL"
+    },
+    {
+      "id": "post_m004",
+      "content": "BREAKING: Dam broken near Dadar! 10ft waves crashing into buildings! Govt hiding the truth! RUN! #MumbaiDoomed",
+      "author": "ConspiracyKing",
+      "timestamp": "2025-07-15T09:30:00Z",
+      "incidentId": "inc_mumbai_001",
+      "parentId": "post_m003",
+      "mutationScore": 62.1,
+      "mutationType": "FABRICATION"
+    },
+    {
+      "id": "post_m005",
+      "content": "Just passed Dadar. It's raining hard but no dam burst. Stop spreading fake news! #MumbaiRains",
+      "author": "FactChecker_Ind",
+      "timestamp": "2025-07-15T09:35:00Z",
+      "incidentId": "inc_mumbai_001",
+      "parentId": "post_m004",
+      "mutationScore": 88.0,
+      "mutationType": "FACTUAL"
+    },
+    {
+      "id": "post_m006",
+      "content": "My uncle works at the municipality, he says they are opening the floodgates! South Mumbai will sink in 1 hour! Forward this!",
+      "author": "WhatsAppUncle",
+      "timestamp": "2025-07-15T09:45:00Z",
+      "incidentId": "inc_mumbai_001",
+      "parentId": "post_m004",
+      "mutationScore": 55.4,
+      "mutationType": "FABRICATION"
+    },
+    {
+      "id": "post_m007",
+      "content": "Water levels receding in Dadar. BMC pumps are working. Situation under control.",
+      "author": "BMC_Official",
+      "timestamp": "2025-07-15T10:00:00Z",
+      "incidentId": "inc_mumbai_001",
+      "parentId": null,
+      "mutationScore": 0.0,
+      "mutationType": null
+    },
+    {
+      "id": "post_v001",
+      "content": "Got my COVID booster today. Feeling fine, just a sore arm. Stay safe everyone! #VaccineSavesLives",
+      "author": "HealthWorker_Mumbai",
+      "timestamp": "2025-08-10T14:00:00Z",
+      "incidentId": "inc_vaccine_002",
+      "parentId": null,
+      "mutationScore": 0.0,
+      "mutationType": null
+    },
+    {
+      "id": "post_v002",
+      "content": "My friend got the booster and had fever for 2 days. Common side effect but manageable. #Vaccine",
+      "author": "ConcernedCitizen",
+      "timestamp": "2025-08-10T14:30:00Z",
+      "incidentId": "inc_vaccine_002",
+      "parentId": "post_v001",
+      "mutationScore": 15.3,
+      "mutationType": "FACTUAL"
+    },
+    {
+      "id": "post_v003",
+      "content": "WARNING: The booster is causing severe reactions! My neighbor was hospitalized! They're not telling us the truth! #VaccineInjury",
+      "author": "AntiVaxWarrior",
+      "timestamp": "2025-08-10T15:00:00Z",
+      "incidentId": "inc_vaccine_002",
+      "parentId": "post_v002",
+      "mutationScore": 48.7,
+      "mutationType": "EMOTIONAL"
+    },
+    {
+      "id": "post_v004",
+      "content": "BREAKING: Vaccine contains microchips! 5G activation confirmed! Government tracking everyone! Wake up sheeple! #VaccineTruth",
+      "author": "ConspiracyHub",
+      "timestamp": "2025-08-10T15:30:00Z",
+      "incidentId": "inc_vaccine_002",
+      "parentId": "post_v003",
+      "mutationScore": 75.2,
+      "mutationType": "FABRICATION"
+    },
+    {
+      "id": "post_v005",
+      "content": "Doctor here. Vaccine side effects are well-documented and temporary. No microchips, no 5G. Please trust science. #FactCheck",
+      "author": "Dr_Sharma_MD",
+      "timestamp": "2025-08-10T16:00:00Z",
+      "incidentId": "inc_vaccine_002",
+      "parentId": "post_v004",
+      "mutationScore": 92.1,
+      "mutationType": "FACTUAL"
+    },
+    {
+      "id": "post_v006",
+      "content": "My cousin's friend died 3 days after vaccine! They're covering it up! Don't take it! #VaccineDeaths",
+      "author": "FearMonger2025",
+      "timestamp": "2025-08-10T16:30:00Z",
+      "incidentId": "inc_vaccine_002",
+      "parentId": "post_v003",
+      "mutationScore": 58.9,
+      "mutationType": "FABRICATION"
+    },
+    {
+      "id": "post_v007",
+      "content": "Official data: 2.5 billion doses administered. Serious adverse events: 0.002%. Vaccine is safe and effective. #COVID19",
+      "author": "WHO_India",
+      "timestamp": "2025-08-10T17:00:00Z",
+      "incidentId": "inc_vaccine_002",
+      "parentId": null,
+      "mutationScore": 0.0,
+      "mutationType": null
+    },
+    {
+      "id": "post_e001",
+      "content": "Long queues at polling stations in Bangalore. Democracy in action! #KarnatakaElections",
+      "author": "VoterBLR",
+      "timestamp": "2025-09-05T08:00:00Z",
+      "incidentId": "inc_election_003",
+      "parentId": null,
+      "mutationScore": 0.0,
+      "mutationType": null
+    },
+    {
+      "id": "post_e002",
+      "content": "Some EVMs showing errors in Whitefield area. Election officials fixing them. #Elections2025",
+      "author": "PollObserver",
+      "timestamp": "2025-09-05T09:00:00Z",
+      "incidentId": "inc_election_003",
+      "parentId": "post_e001",
+      "mutationScore": 22.4,
+      "mutationType": "FACTUAL"
+    },
+    {
+      "id": "post_e003",
+      "content": "EVMs are rigged! Votes being changed! I saw it with my own eyes! This is election fraud! #StopTheSteal",
+      "author": "AngryVoter",
+      "timestamp": "2025-09-05T10:00:00Z",
+      "incidentId": "inc_election_003",
+      "parentId": "post_e002",
+      "mutationScore": 52.8,
+      "mutationType": "EMOTIONAL"
+    },
+    {
+      "id": "post_e004",
+      "content": "MASSIVE FRAUD: Truckloads of fake ballots arriving at counting centers! Opposition being cheated! Revolution now! #ElectionFraud",
+      "author": "PoliticalTroll",
+      "timestamp": "2025-09-05T11:00:00Z",
+      "incidentId": "inc_election_003",
+      "parentId": "post_e003",
+      "mutationScore": 68.3,
+      "mutationType": "FABRICATION"
+    },
+    {
+      "id": "post_e005",
+      "content": "Election Commission statement: All EVMs functioning normally. No evidence of tampering. Observers present at all locations. #FreeAndFair",
+      "author": "ElectionCommission",
+      "timestamp": "2025-09-05T12:00:00Z",
+      "incidentId": "inc_election_003",
+      "parentId": "post_e004",
+      "mutationScore": 95.7,
+      "mutationType": "FACTUAL"
+    },
+    {
+      "id": "post_e006",
+      "content": "Video proof of ballot stuffing! Share before they delete it! #ExposeFraud",
+      "author": "FakeNewsFactory",
+      "timestamp": "2025-09-05T13:00:00Z",
+      "incidentId": "inc_election_003",
+      "parentId": "post_e003",
+      "mutationScore": 61.2,
+      "mutationType": "FABRICATION"
+    },
+    {
+      "id": "post_f001",
+      "content": "Bought vegetables from local market. Always wash before cooking! #HealthyEating",
+      "author": "HomeCook_Delhi",
+      "timestamp": "2025-10-01T10:00:00Z",
+      "incidentId": "inc_food_004",
+      "parentId": null,
+      "mutationScore": 0.0,
+      "mutationType": null
+    },
+    {
+      "id": "post_f002",
+      "content": "Friend got food poisoning from street vendor in Connaught Place. Be careful where you eat. #FoodSafety",
+      "author": "DelhiFoodie",
+      "timestamp": "2025-10-01T11:00:00Z",
+      "incidentId": "inc_food_004",
+      "parentId": "post_f001",
+      "mutationScore": 28.6,
+      "mutationType": "FACTUAL"
+    },
+    {
+      "id": "post_f003",
+      "content": "ALERT: Vegetables contaminated with pesticides! Multiple people hospitalized! Avoid all markets! #FoodCrisis",
+      "author": "PanicSpreader",
+      "timestamp": "2025-10-01T12:00:00Z",
+      "incidentId": "inc_food_004",
+      "parentId": "post_f002",
+      "mutationScore": 44.9,
+      "mutationType": "EMOTIONAL"
+    },
+    {
+      "id": "post_f004",
+      "content": "BREAKING: Terrorist attack on food supply! Poison in water! Don't eat or drink anything! Government silent! #FoodTerror",
+      "author": "FearMongerer",
+      "timestamp": "2025-10-01T13:00:00Z",
+      "incidentId": "inc_food_004",
+      "parentId": "post_f003",
+      "mutationScore": 71.5,
+      "mutationType": "FABRICATION"
+    },
+    {
+      "id": "post_f005",
+      "content": "FSSAI inspection: All major markets cleared. One vendor fined for hygiene violation. No contamination found. #FoodSafety",
+      "author": "FSSAI_Official",
+      "timestamp": "2025-10-01T14:00:00Z",
+      "incidentId": "inc_food_004",
+      "parentId": "post_f004",
+      "mutationScore": 89.3,
+      "mutationType": "FACTUAL"
+    }
+  ]
+}
